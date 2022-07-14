@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 100px 0 0 100px;
+}
+
+.bat {}
+
+.bat img {
+    height: 300px;
+    width: 300px;
+    transform-origin: top right;
+    animation: bat 2s ease-in-out 1;
+    /* transform: rotate(-70deg); */
+}
+
+.ball {}
+
+.ball img {
+    width: 100px;
+    height: auto;
+    position: relative;
+    left: 431px;
+    bottom: 42px;
+    animation: ball 2s ease-in-out 1.5s 1;
+    /* transform: translate(550px, -200px); */
+}
+
+@keyframes bat {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-75deg);
+    }
+}
+
+@keyframes ball {
+    0% {
+        transform: translate(0deg);
+    }
+
+    100% {
+        transform: translate(550px, -200px);
+    }
+}
